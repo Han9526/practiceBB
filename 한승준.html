@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>한승준</title>
+    <!-- Custom Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/topbar.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/comment.css">
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <!-- Topbar_html -->
+    <section class="top_html">
+        <header class="HeaderBar">
+            <div class="HeaderBox">
+                <img src="images/logo배경.png" class="logoImage" alt="Your Image Alt Text">
+                <ul class="HeaderMenu">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#"><i class="bi bi-laptop"></i>이정훈</a></li>
+                    <li><a href="#">김도현</a></li>
+                    <li><a href="#">김효진</a></li>
+                    <li><a href="#">이아영</a></li>
+                    <li><a href="#">한승준</a></li>
+                </ul>
+            </div>
+        </header>
+    </section>
+    <!-- Topbar_html -->
+
+    <!-- Member_html -->
+    <section class="info_html">
+        <main class="flex-shrink-0">
+            <header class="py-4">
+                <div class="container px-5 pb-5">
+                    <div class="row gx-5 align-items-center">
+                        <div class="col-xxl-5">
+                            <div class="text-center text-xxl-start">
+                                <div class="badge bg-gradient-primary-to-secondary text-white mb-4">
+                                    <div class="text-uppercase">한승준</div>
+                                </div>
+                                <div class="fs-3 fw-light text-muted">Node.js 3기</div>
+                                <h1 class="display-3 fw-bolder mb-5"><span class="text-gradient d-inline"
+                                        style="font-size: 24px;">
+                                        MBTI : INTP<br>
+                                        장점 : 잘은..못해도 열심히는 합니다 ㅠ.ㅠ<br>
+                                        협업스타일 : 자신의 미숙함을 인정하면서 새로운 것을 배우고 성장하려고 노력합니다<br>
+                                        TMI : 드라마보는걸 좋아함(완결된것만)</span></h1>
+                                <div>
+                                    <a class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder"
+                                        href="https://velog.io/@qpqp9526" target="_blank">blog</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-7">
+                            <div class="d-flex justify-content-center mt-5 mt-xxl-0">
+                                <div class="profile bg-gradient-primary-to-secondary">
+
+                                    <img class="profile-img profile bg-gradient-primary-to-secondary"
+                                        src="images/한승준.jpg" alt="..." />
+    </section>
+    <!-- Member_html -->
+
+    <!-- Comment_html -->
+    <section class="comment_html">
+
+        <div class="board">
+            <img src="./images/comment-book.png" class="board-img" />
+            <h1 class="h1-comment">Comment</h1>
+            <div class="comment-list-box">
+                <table>
+                    <thead>
+                        <th style="width: 15%">이름</th>
+                        <th style="width: 45%">댓글</th>
+                        <th style="width: 20%">작성시간</th>
+                        <th style="width: 10%">수정</th>
+                        <th style="width: 10%">삭제</th>
+                    </thead>
+                    <td style="width: 15%">한승준</td>
+                    <td style="width: 45%">안녕하세요</td>
+                    <td style="width: 20%">2023-10-03</td>
+                    <td style="width: 10%"><button>edit</button></td>
+                    <td style="width: 10%"><button>del</button></td>
+                    <tbody id="chat_list">
+                    </tbody>
+                </table>
+            </div>
+            <div class="chat-input">
+                <input id="chat-input-name" class="chat-input-name" type="text" placeholder="이름" />
+                <input id="chat-input-password" class="chat-input-password" type="password" placeholder="비밀번호" />
+                <input id="chat-input-text" class="chat-input-text" type="text" placeholder="댓글" />
+                <img src="./images/free-icon-pencil-588395.png" id="chat-input-btn" class="chat-input-btn" />
+            </div>
+        </div>
+        <!-- Comment_html -->
+
+        <!-- Password modal-->
+        <section class="modal_html">
+            <div class="modal" id="Password_modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Password</h5>
+                        </div>
+                        <div class="modal-body">
+                            <div class="mb-3">
+                                <label for="Password_inputField" class="form-label">비밀번호를 입력하시오</label>
+                                <input type="password" class="form-control" id="Password_inputField">
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" id="Password_correct_btn">확인</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">취소</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Password modal-->
+
+
+            <!-- Edit modal  -->
+            <div class="modal" id="Edit_modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Edit</h5>
+                        </div>
+                        <div class="modal-body">
+                            <div class="mb-3">
+                                <label for="edit_inputField" class="form-label">수정할 내용을 입력하시오</label>
+                                <input type="text" class="form-control" id="edit_inputField">
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" id="edit_correct_btn">확인</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">취소</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Edit modal  -->
+
+        </section>
+
+        <script type="module">
+            import { db } from "./js/API_firestore.js"
+            import {
+                addData,
+                updateCommentList,
+                deletModal,
+                editModal,
+                editComment,
+                orderBy, getDocs, query, onSnapshot, collection
+            } from "./js/Comment.js";
+
+
+            // Real-time updates FireStore
+            const querySnapshot = query(collection(db, "chat_hsj"), orderBy("created_at", "desc"));
+            // onSnapshot<<<실시간업데이트
+            const updateComment = onSnapshot(querySnapshot, (snapshot) => {
+                updateCommentList(snapshot);
+            });
+            // Real-time updates FireStore
+
+            // Sign-Up-Btn
+            $("#chat-input-btn").click(async function () {
+                let inputName = $('#chat-input-name').val();
+                let inputPassword = $('#chat-input-password').val();
+                let inputComment = $('#chat-input-text').val();
+
+                addData(inputName, inputPassword, inputComment);
+            });
+            // Sign-Up-Btn
+
+            // Delte-Btn
+            $(document).ready(function () {
+                $(document).on('click', '#delete_button', async function () {
+                    let chatdocId = $(this).data('chatdata_id');
+                    deletModal(chatdocId);
+                });
+            });
+            // Delte-Btn
+
+            // Edit-Btn
+            // document.ready<<Html 로딩 완료되고 실행
+            $(document).ready(function () {
+                // document.on 은 동적으로 생성되는 요소에 이벤트 적용하기위해
+                $(document).on('click', '#edit_button', async function () {
+                    let chatdocId = $(this).data('chatdata_id');
+                    editModal(chatdocId);
+                });
+
+                $('#edit_correct_btn').click(function () {
+                    let chatdocId = $('#edit_button').data('chatdata_id');
+                    editComment(chatdocId);
+                });
+            });
+            // Edit-Btn
+
+        </script>
+</body>
+
+</html>
