@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.modal_html{
+    font-family: 'GmarketSansMedium';
+}
+Header {
+    font-family: 'GmarketSansMedium';
+}
+
+.HeaderBar {
+    border-bottom: 1px solid;
+    height: 100px;
+}
+
+.HeaderBar a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.HeaderBox {
+    display: flex;
+    padding: 0 20px;
+    height: 100%;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.HeaderTitle {
+    display: flex;
+    align-items: center;
+    font-size: 50px;
+    padding: 0 20px;
+}
+
+.HeaderTitle:hover {
+    text-shadow: 1px 1px 1px black;
+}
+
+.HeaderMenu {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.HeaderMenu li {
+    padding: 0 10px;
+    list-style: none;
+}
+
+.HeaderMenu li :hover {
+    text-shadow: 1px 1px 1px black;
+}
+
+.HeaderMenu li i {
+    padding: 3px;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+}
+
+
+
+.logoImage {
+    max-width: 80%;
+    margin-left: -10px;
+    max-height: 80%;
+    margin-top: 10px;
+}
+
+.modal-footer {
+    text-align: right;
+}

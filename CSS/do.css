@@ -1,0 +1,147 @@
+/*===========================================================================
+	RESET
+============================================================================*/
+html,
+body,
+div,
+span,
+img,
+ul,
+li,
+section,
+br {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  color: #282828;
+  line-height: 1.5;
+  letter-spacing: -0.2px;
+}
+
+section {
+  display: block
+}
+
+img {
+  border: none;
+  vertical-align: middle;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+textarea:read-only {
+  background: #F2F2F2;
+}
+
+.container {
+  font-family: "Pretendard", sans-serif;
+  box-sizing: border-box;
+  font-size: 13px;
+  color: #333333;
+  border-color: #ccc;
+}
+
+/*reset end*/
+
+
+/*정렬*/
+
+.floatL {
+  float: left;
+}
+
+.floatR {
+  float: right;
+}
+
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* 상세 */
+.container{
+  margin-top: 50px;
+  margin-left: 50px;
+}
+.fastcam_info_l {
+  width: 520px;
+  height: 274px;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  background: url("./images/temp_profile.png") no-repeat center;
+  background-size: cover;
+}
+
+.fastcam_info_r {
+  margin: auto;  
+  width: calc(100% - 560px);
+  
+}
+
+.fastcam_info_r .club_logo>div {
+  display: inline-block;
+  font-size: 26px;
+  font-weight: 600;
+  color: #333333;
+}
+
+.fastcam_info_r .club_logo>div span {
+  display: block;
+  width: max-content;
+  padding: 3px 10px;
+  font-size: 12px;
+  color: #244185;
+  background-color: #E2EBFF;
+  border-radius: 13px;
+}
+
+.fastcam_info_r .club_logo i {
+  display: inline-block;
+  margin-right: 30px;
+  width: 86px;
+  height: 67px;
+  vertical-align: top;
+  overflow: hidden;
+}
+
+.fastcam_info_r .club_logo i img {
+  width: 100%;
+}
+
+.fastcam_info_r ul li {
+  font-size: 15px;
+  font-weight: 500;
+  color: #2A2A2A;
+}
+
+.fastcam_info_r ul li span {
+  display: inline-block;
+  width: 120px;
+  font-size: 14px;
+  color: #505050;
+}
+
+.fastcam_introduce_wrap {
+  background-color: #F7F9FA;
+  border-radius: 8px;
+  padding: 30px 10px 20px 30px;
+  margin-top: 33px;
+  margin-right: 50px;
+}
+
+.fastcam_introduce_wrap div {
+  height: 300px;
+  overflow-Y: auto;
+  padding-right: 20px;
+  font-size: 14px;
+  color: #787B7E;
+  line-height: 23px;
+}
